@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDUL FATTAH BIN IZAIMAN</title>
+
+    <!-- ======= CSS YANG ANDA BERIKAN (FULL VERSION) ======= -->
+    <style>
+/* --- 1. Variables and Global Reset (image_2865f7.png) --- */
+:root {
+  --base-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #ffc06e;
+  --secondary-color: #8D8DFF;
+  --color-1: #F9F6F3;
+  --color-2: #F3F7F9;
+  --color-3: #F6F3F9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- 2. Base Typography and Body Styles --- */
+html {
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  padding: 1em;
+  background-color: var(--base-color);
+}
+
+h1, h2, h3 {
+  font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* --- 3. Layout and Structure Styles --- */
+header, section {
+  margin: 2em auto;
+  width: min(75em, 100%);
+  background-color: var(--color-1);
+  padding: min(2em, 15%);
+  border-radius: 1em;
+}
+
+section {
+  padding: 3em min(2em, 15%);
+  background-color: var(--color-2);
+  text-align: center;
+}
+
+section:nth-child(3) {
+  background-color: var(--color-3);
+}
+
+section p {
+  margin-top: 1em;
+  font-size: 1.25rem;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.text-container {
+  flex: 0 1 34em;
+}
+
+.text-container p {
+  margin: .75em 0 1em 0;
+  font-size: 1.25rem;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding: .75em 1.25em;
+  border-radius: .5em;
+  font-weight: 600;
+}
+
+header img {
+  max-width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.grid-container {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+  gap: 1em;
+}
+
+.grid-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: .5em;
+  transition: 100ms ease;
+}
+
+.grid-container img:hover {
+  scale: 1.05;
+}
+
+/* --- 4. Navigation --- */
+nav {
+  margin: 1em auto 3em auto;
+  width: min(1000px, 100%);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 2em;
+}
+
+nav li:first-child {
+  font-family: Merriweather;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- 5. Details/FAQ and Footer --- */
+details {
+  margin-top: 1em;
+  background-color: var(--base-color);
+  border-radius: 1em;
+}
+
+details summary {
+  padding: 1em;
+  font-size: 1.7rem;
+  font-family: Merriweather;
+}
+
+details p {
+  padding: 0 2em 2em 2em;
+}
+
+footer {
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- 6. Media Queries --- */
+@media (max-width: 988px) {
+  header {
+    text-align: center;
+  }
+
+  header .text-container {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  nav li {
+    display: none;
+  }
+
+  nav li:first-child,
+  nav li:last-child {
+    display: block;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  .cta-button {
+    margin-top: .5em;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">ABDUL FATTAH BIN IZAIMAN</a></li>
+            <li><a href="https://www.instagram.com/abdlftth0._?igsh=MW9nY3h1NWVqdGJmcw%3D%3D&utm_source=qr">Instagram</a></li>
+            <li><a href="#">Linked In</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== HEADER (PROFILE SECTION) ========== -->
+    <header>
+        <div class="flex-container">
+            <img height="400px" width="300px" src="photo_2025-12-03_16-11-53 (2).jpg" alt="Profile Image">
+
+            <div class="text-container">
+                <h1>Hey Friends!</h1>
+                <p>
+                    Hye Selamat Berkenalan, Saya Abdul Fattah Bin Izaiman, Saya adalah seorang pelajar KVPM 
+                    dan mengambil Diploma Teknologi Maklumat, secara lebih lanjutnya ialah kelas D2KSK2. 
+                    Dikolej, saya mempelajari dan dipelajari apa itu dunia Komputer Teknologi Maklumat.
+                </p>
+                <a href="#" class="cta-button">Follow Me on Instagram</a>
+                <a href="#my-work" class="cta-button secondary">See my Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== SERVICE SECTION ========== -->
+    <section>
+        <h2>How I can help you</h2>
+        <p>
+            I offer reliable and high-quality services designed to meet your specific needs.
+            With a focus on efficiency, clarity, and results, I work with you to create solutions that deliver real value.
+        </p>
+        <img width="350px" src="images/undraw_product-photography_pouq.svg" alt="">
+    </section>
+
+    <!-- ========== MY WORK ========== -->
+    <section id="my-work">
+        <h2>Some of my best pictures</h2>
+
+        <div class="grid-container">
+            <img style="grid-area: img-1" src="photo_2025-12-03_16-20-02.jpg">
+            <img style="grid-area: img-2" src="photo_2025-06-19_11-50-56.jpg">
+            <img style="grid-area: img-3" src="photo_2025-06-19_11-59-24.jpg">
+            <img style="grid-area: img-4" src="photo_2025-12-03_16-11-53.jpg">
+            <img style="grid-area: img-5" src="preman.jpg">
+        </div>
+
+        <a href="#" class="cta-button">More on my Insta</a>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section>
+        <h2>Common Questions</h2>
+
+        <details>
+            <summary>How much does it cost?</summary>
+            <p>The cost depends on the type of service you need. We offer fair and transparent pricing.</p>
+        </details>
+
+        <details>
+            <summary>Do you do business?</summary>
+            <p>Yes, I collaborate with individuals, companies, and organizations.</p>
+        </details>
+
+        <details>
+            <summary>How can I contact you?</summary>
+            <p>You can reach out via Instagram, email, or any contact link provided.</p>
+        </details>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <a href="#">Linked In</a>
+        <a href="#my-work">My Work</a>
+        <a href="#">Contact</a>
+    </footer>
+
+</body>
+</html>
